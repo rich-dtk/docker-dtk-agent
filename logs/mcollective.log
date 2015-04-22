@@ -1,0 +1,941 @@
+# Logfile created on 2015-04-22 00:20:17 +0000 by logger.rb/31641
+D, [2015-04-22T00:20:17.969344 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Facts::Pbuilder_facts from mcollective/facts/pbuilder_facts.rb
+D, [2015-04-22T00:20:18.044679 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin facts_plugin with class MCollective::Facts::Pbuilder_facts single_instance: true
+D, [2015-04-22T00:20:18.044891 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Connector::Stomp from mcollective/connector/stomp.rb
+D, [2015-04-22T00:20:18.049342 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin connector_plugin with class MCollective::Connector::Stomp single_instance: true
+D, [2015-04-22T00:20:18.049563 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Security::Sshkey from mcollective/security/sshkey.rb
+D, [2015-04-22T00:20:18.057553 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin security_plugin with class MCollective::Security::Sshkey single_instance: true
+D, [2015-04-22T00:20:18.214237 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Registration::Agentlist from mcollective/registration/agentlist.rb
+D, [2015-04-22T00:20:18.216545 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin registration_plugin with class MCollective::Registration::Agentlist single_instance: true
+D, [2015-04-22T00:20:18.217608 #21] DEBUG -- : pluginmanager.rb:47:in `<<' Registering plugin global_stats with class MCollective::RunnerStats single_instance: true
+I, [2015-04-22T00:20:18.217731 #21]  INFO -- : mcollectived:31:in `<top (required)>' The Marionette Collective 2.2.3 started logging at debug level
+D, [2015-04-22T00:20:18.217825 #21] DEBUG -- : mcollectived:46:in `<top (required)>' Starting in the foreground
+D, [2015-04-22T00:20:18.219505 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:20:18.219643 #21] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:20:18.219794 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:20:18.219906 #21] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin connector_plugin with class MCollective::Connector::Stomp
+I, [2015-04-22T00:20:18.220039 #21]  INFO -- : stomp.rb:124:in `initialize' MCollective 2.2.x will be the last to fully support the 'stomp' connector, please migrate to the 'activemq' or 'rabbitmq' connector
+D, [2015-04-22T00:20:18.220174 #21] DEBUG -- : stomp.rb:152:in `connect' Connecting to dtkhost2.internal.r8network.com:6163
+D, [2015-04-22T00:20:18.235687 #21] DEBUG -- : agents.rb:26:in `loadagents' Reloading all agents from disk
+D, [2015-04-22T00:20:18.236069 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found discovery at /usr/share/mcollective/plugins/mcollective/agent/discovery.rb
+D, [2015-04-22T00:20:18.236210 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Discovery from mcollective/agent/discovery.rb
+D, [2015-04-22T00:20:18.237546 #21] DEBUG -- : agents.rb:91:in `activate_agent?' MCollective::Agent::Discovery does not have an activate? method, activating as default
+D, [2015-04-22T00:20:18.237685 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin discovery_agent with class MCollective::Agent::Discovery single_instance: true
+D, [2015-04-22T00:20:18.237790 #21] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin discovery_agent with class MCollective::Agent::Discovery
+D, [2015-04-22T00:20:18.237939 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:18.238070 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.discovery.command
+D, [2015-04-22T00:20:18.238499 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found rpcutil at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:20:18.238652 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Rpcutil from mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:20:18.247043 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for rpcutil
+D, [2015-04-22T00:20:18.247197 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin rpcutil_agent with class MCollective::Agent::Rpcutil single_instance: false
+D, [2015-04-22T00:20:18.247307 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin rpcutil_agent with class MCollective::Agent::Rpcutil
+D, [2015-04-22T00:20:18.248368 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/rpcutil'
+D, [2015-04-22T00:20:18.251351 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found rpcutil ddl at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.ddl
+D, [2015-04-22T00:20:18.252308 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:18.252444 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.rpcutil.command
+D, [2015-04-22T00:20:18.252711 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:20:18.252840 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests from mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:20:18.254115 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests
+D, [2015-04-22T00:20:18.254259 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_agent with class MCollective::Agent::Execute_tests single_instance: false
+D, [2015-04-22T00:20:18.254419 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_agent with class MCollective::Agent::Execute_tests
+D, [2015-04-22T00:20:18.254586 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests'
+D, [2015-04-22T00:20:18.254818 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.ddl
+D, [2015-04-22T00:20:18.255098 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:18.255228 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests.command
+D, [2015-04-22T00:20:18.255490 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found tail at /usr/share/mcollective/plugins/mcollective/agent/tail.rb
+D, [2015-04-22T00:20:18.255616 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Tail from mcollective/agent/tail.rb
+D, [2015-04-22T00:20:18.256564 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for tail
+D, [2015-04-22T00:20:18.256705 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin tail_agent with class MCollective::Agent::Tail single_instance: false
+D, [2015-04-22T00:20:18.256808 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:20:18.256971 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:20:18.257196 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found tail ddl at /usr/share/mcollective/plugins/mcollective/agent/tail.ddl
+D, [2015-04-22T00:20:18.257485 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:18.260693 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.tail.command
+D, [2015-04-22T00:20:18.260980 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dtk_node_agent_git_client at /usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb
+D, [2015-04-22T00:20:18.261149 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dtk_node_agent_git_client from mcollective/agent/dtk_node_agent_git_client.rb
+W, [2015-04-22T00:20:18.433046 #21]  WARN -- : agents.rb:95:in `rescue in activate_agent?' Agent activation check for dtk_node_agent_git_client failed: NameError: uninitialized constant MCollective::Agent::Dtk_node_agent_git_client
+D, [2015-04-22T00:20:18.433248 #21] DEBUG -- : agents.rb:67:in `loadagent' Not activating agent dtk_node_agent_git_client due to agent policy in activate? method
+D, [2015-04-22T00:20:18.433438 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found sync_agent_code at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:20:18.433599 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Sync_agent_code from mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:20:19.312558 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for sync_agent_code
+D, [2015-04-22T00:20:19.312797 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code single_instance: false
+D, [2015-04-22T00:20:19.312908 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code
+D, [2015-04-22T00:20:19.313103 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/sync_agent_code'
+D, [2015-04-22T00:20:19.313385 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found sync_agent_code ddl at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.ddl
+D, [2015-04-22T00:20:19.313706 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.313856 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.sync_agent_code.command
+D, [2015-04-22T00:20:19.314352 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found get_log_fragment at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.rb
+D, [2015-04-22T00:20:19.314506 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Get_log_fragment from mcollective/agent/get_log_fragment.rb
+W, [2015-04-22T00:20:19.315898 #21]  WARN -- : agent.rb:234:in `metadata' get_log_fragment.rb:16:in `<class:Get_log_fragment>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:20:19.316059 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for get_log_fragment
+D, [2015-04-22T00:20:19.316195 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment single_instance: false
+D, [2015-04-22T00:20:19.316301 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment
+D, [2015-04-22T00:20:19.316468 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/get_log_fragment'
+D, [2015-04-22T00:20:19.316702 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found get_log_fragment ddl at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.ddl
+D, [2015-04-22T00:20:19.317045 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.317181 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.get_log_fragment.command
+D, [2015-04-22T00:20:19.317493 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ssh_agent at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:20:19.317685 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ssh_agent from mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:20:19.319145 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ssh_agent
+D, [2015-04-22T00:20:19.319314 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent single_instance: false
+D, [2015-04-22T00:20:19.319421 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent
+D, [2015-04-22T00:20:19.319586 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ssh_agent'
+D, [2015-04-22T00:20:19.319819 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found ssh_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.ddl
+D, [2015-04-22T00:20:19.320130 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.320261 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ssh_agent.command
+D, [2015-04-22T00:20:19.320578 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found git_access at /usr/share/mcollective/plugins/mcollective/agent/git_access.rb
+D, [2015-04-22T00:20:19.320774 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Git_access from mcollective/agent/git_access.rb
+D, [2015-04-22T00:20:19.321867 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for git_access
+D, [2015-04-22T00:20:19.322015 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin git_access_agent with class MCollective::Agent::Git_access single_instance: false
+D, [2015-04-22T00:20:19.322120 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin git_access_agent with class MCollective::Agent::Git_access
+D, [2015-04-22T00:20:19.322330 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/git_access'
+D, [2015-04-22T00:20:19.322570 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found git_access ddl at /usr/share/mcollective/plugins/mcollective/agent/git_access.ddl
+D, [2015-04-22T00:20:19.322847 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.322977 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.git_access.command
+D, [2015-04-22T00:20:19.323288 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found action_agent at /usr/share/mcollective/plugins/mcollective/agent/action_agent.rb
+D, [2015-04-22T00:20:19.323478 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Action_agent from mcollective/agent/action_agent.rb
+D, [2015-04-22T00:20:19.324637 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for action_agent
+D, [2015-04-22T00:20:19.324783 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin action_agent_agent with class MCollective::Agent::Action_agent single_instance: false
+D, [2015-04-22T00:20:19.324888 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin action_agent_agent with class MCollective::Agent::Action_agent
+D, [2015-04-22T00:20:19.325048 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/action_agent'
+D, [2015-04-22T00:20:19.325287 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found action_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/action_agent.ddl
+D, [2015-04-22T00:20:19.325567 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.325697 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.action_agent.command
+D, [2015-04-22T00:20:19.326016 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_apply at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:20:19.326207 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_apply from mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:20:19.332318 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_apply
+D, [2015-04-22T00:20:19.332486 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply single_instance: false
+D, [2015-04-22T00:20:19.332597 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:20:19.332766 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_apply'
+D, [2015-04-22T00:20:19.333002 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_apply ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.ddl
+D, [2015-04-22T00:20:19.333290 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.333423 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_apply.command
+D, [2015-04-22T00:20:19.333742 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests_v2 at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:20:19.333942 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests_v2 from mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:20:19.421411 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests_v2
+D, [2015-04-22T00:20:19.421609 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2 single_instance: false
+D, [2015-04-22T00:20:19.421720 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2
+D, [2015-04-22T00:20:19.421901 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests_v2'
+D, [2015-04-22T00:20:19.422158 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests_v2 ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.ddl
+D, [2015-04-22T00:20:19.422507 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.422650 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests_v2.command
+D, [2015-04-22T00:20:19.423009 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ps at /usr/share/mcollective/plugins/mcollective/agent/ps.rb
+D, [2015-04-22T00:20:19.423146 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ps from mcollective/agent/ps.rb
+W, [2015-04-22T00:20:19.424384 #21]  WARN -- : agent.rb:234:in `metadata' ps.rb:10:in `<class:Ps>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:20:19.424552 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ps
+D, [2015-04-22T00:20:19.424689 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ps_agent with class MCollective::Agent::Ps single_instance: false
+D, [2015-04-22T00:20:19.424794 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ps_agent with class MCollective::Agent::Ps
+D, [2015-04-22T00:20:19.424961 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ps'
+D, [2015-04-22T00:20:19.425194 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found ps ddl at /usr/share/mcollective/plugins/mcollective/agent/ps.ddl
+D, [2015-04-22T00:20:19.425475 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.425607 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ps.command
+D, [2015-04-22T00:20:19.425919 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found netstat at /usr/share/mcollective/plugins/mcollective/agent/netstat.rb
+D, [2015-04-22T00:20:19.426143 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Netstat from mcollective/agent/netstat.rb
+W, [2015-04-22T00:20:19.427268 #21]  WARN -- : agent.rb:234:in `metadata' netstat.rb:10:in `<class:Netstat>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:20:19.427435 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for netstat
+D, [2015-04-22T00:20:19.427572 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin netstat_agent with class MCollective::Agent::Netstat single_instance: false
+D, [2015-04-22T00:20:19.427675 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin netstat_agent with class MCollective::Agent::Netstat
+D, [2015-04-22T00:20:19.427839 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/netstat'
+D, [2015-04-22T00:20:19.428075 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found netstat ddl at /usr/share/mcollective/plugins/mcollective/agent/netstat.ddl
+D, [2015-04-22T00:20:19.428353 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.428485 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.netstat.command
+D, [2015-04-22T00:20:19.428798 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dev_manager at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:20:19.428928 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dev_manager from mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:20:19.430387 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for dev_manager
+D, [2015-04-22T00:20:19.430537 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin dev_manager_agent with class MCollective::Agent::Dev_manager single_instance: false
+D, [2015-04-22T00:20:19.430642 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin dev_manager_agent with class MCollective::Agent::Dev_manager
+D, [2015-04-22T00:20:19.430808 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/dev_manager'
+D, [2015-04-22T00:20:19.431038 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found dev_manager ddl at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.ddl
+D, [2015-04-22T00:20:19.431318 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.431450 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.dev_manager.command
+D, [2015-04-22T00:20:19.431759 #21] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_cancel at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:20:19.431886 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_cancel from mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:20:19.434565 #21] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_cancel
+D, [2015-04-22T00:20:19.434719 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel single_instance: false
+D, [2015-04-22T00:20:19.434827 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel
+D, [2015-04-22T00:20:19.434998 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_cancel'
+D, [2015-04-22T00:20:19.435231 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_cancel ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.ddl
+D, [2015-04-22T00:20:19.435546 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.435687 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_cancel.command
+D, [2015-04-22T00:20:19.438546 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Agent_data from mcollective/data/agent_data.rb
+D, [2015-04-22T00:20:19.441752 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin agent_data with class MCollective::Data::Agent_data single_instance: false
+D, [2015-04-22T00:20:19.441937 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Collective_data from mcollective/data/collective_data.rb
+D, [2015-04-22T00:20:19.442894 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin collective_data with class MCollective::Data::Collective_data single_instance: false
+D, [2015-04-22T00:20:19.443056 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fact_data from mcollective/data/fact_data.rb
+D, [2015-04-22T00:20:19.444133 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fact_data with class MCollective::Data::Fact_data single_instance: false
+D, [2015-04-22T00:20:19.444301 #21] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fstat_data from mcollective/data/fstat_data.rb
+D, [2015-04-22T00:20:19.445519 #21] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fstat_data with class MCollective::Data::Fstat_data single_instance: false
+D, [2015-04-22T00:20:19.445687 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin agent_data with class MCollective::Data::Agent_data
+D, [2015-04-22T00:20:19.445868 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/agent_data'
+D, [2015-04-22T00:20:19.464182 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found agent_data ddl at /usr/share/mcollective/plugins/mcollective/data/agent_data.ddl
+D, [2015-04-22T00:20:19.465949 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin collective_data with class MCollective::Data::Collective_data
+D, [2015-04-22T00:20:19.466144 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/collective_data'
+D, [2015-04-22T00:20:19.466422 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found collective_data ddl at /usr/share/mcollective/plugins/mcollective/data/collective_data.ddl
+D, [2015-04-22T00:20:19.466736 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fact_data with class MCollective::Data::Fact_data
+D, [2015-04-22T00:20:19.466893 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fact_data'
+D, [2015-04-22T00:20:19.467092 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found fact_data ddl at /usr/share/mcollective/plugins/mcollective/data/fact_data.ddl
+D, [2015-04-22T00:20:19.467413 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fstat_data with class MCollective::Data::Fstat_data
+D, [2015-04-22T00:20:19.467572 #21] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fstat_data'
+D, [2015-04-22T00:20:19.467771 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found fstat_data ddl at /usr/share/mcollective/plugins/mcollective/data/fstat_data.ddl
+D, [2015-04-22T00:20:19.468276 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:20:19.468407 #21] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.mcollective.command
+D, [2015-04-22T00:20:19.468741 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:21:12.653189 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:21:12.653697 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:12.654071 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:21:12.654445 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:21:12.655829 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:21:12.656117 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:12.656421 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:12.656711 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:21:12.656954 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:21:12.657202 #21] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:21:12.657528 #21] DEBUG -- : base.rb:30:in `block in get_fact' Resetting facter cache, now: 1429662072 last-known-good: 0
+D, [2015-04-22T00:21:12.658486 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:21:12.658754 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent ps
+D, [2015-04-22T00:21:12.658966 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:21:12.659175 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:21:12.659386 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'ps' on collective 'dtk-tenant101'
+D, [2015-04-22T00:21:12.659584 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent ps
+D, [2015-04-22T00:21:12.659832 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:21:12.660106 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ps_agent with class MCollective::Agent::Ps
+D, [2015-04-22T00:21:12.660419 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/ps'
+D, [2015-04-22T00:21:12.692260 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:21:12.692668 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662072 last-known-good: 1429662072
+D, [2015-04-22T00:21:12.693030 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:12.693301 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:12.693681 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 3c22525532245fb6ae1855f085e95244
+D, [2015-04-22T00:21:12.698745 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:21:12.699048 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.ps.reply'
+D, [2015-04-22T00:21:12.699951 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:21:37.032813 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:21:37.033302 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:37.033724 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:21:37.034119 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:21:37.035531 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:21:37.035885 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:37.036234 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:37.036640 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:21:37.036894 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:21:37.037172 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:21:37.037470 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662097 last-known-good: 1429662072
+D, [2015-04-22T00:21:37.037777 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:21:37.038061 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent netstat
+D, [2015-04-22T00:21:37.038335 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:21:37.038577 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:21:37.038814 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'netstat' on collective 'dtk-tenant101'
+D, [2015-04-22T00:21:37.039034 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent netstat
+D, [2015-04-22T00:21:37.039293 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:21:37.039585 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin netstat_agent with class MCollective::Agent::Netstat
+D, [2015-04-22T00:21:37.040012 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/netstat'
+D, [2015-04-22T00:21:37.062792 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:21:37.063134 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662097 last-known-good: 1429662072
+D, [2015-04-22T00:21:37.063518 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:37.063777 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:21:37.064082 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 3defac8003515cfa98b7647d430d18db
+D, [2015-04-22T00:21:37.068836 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:21:37.069131 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.netstat.reply'
+D, [2015-04-22T00:21:37.069773 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:22:06.172317 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:22:06.172797 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:06.173206 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:22:06.173585 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:22:06.175015 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:22:06.175389 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:06.175737 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:06.176146 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:06.176416 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:22:06.176745 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:06.177058 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662126 last-known-good: 1429662072
+D, [2015-04-22T00:22:06.177360 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:06.177639 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent tail
+D, [2015-04-22T00:22:06.177870 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:22:06.178082 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:22:06.178355 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'tail' on collective 'dtk-tenant101'
+D, [2015-04-22T00:22:06.178583 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent tail
+D, [2015-04-22T00:22:06.178826 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:22:06.179143 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:22:06.179553 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:22:06.222985 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:06.223285 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662126 last-known-good: 1429662072
+D, [2015-04-22T00:22:06.223639 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:06.223892 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:06.224216 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 98fcaa2482d35201af00647f18b8aee0
+D, [2015-04-22T00:22:06.228805 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:22:06.229108 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.tail.reply'
+D, [2015-04-22T00:22:06.230189 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:22:08.340945 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:22:08.341410 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:08.341813 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:22:08.342227 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:22:08.343634 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:22:08.344009 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:08.344357 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:08.344768 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:08.345030 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:22:08.345326 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:08.345658 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662128 last-known-good: 1429662072
+D, [2015-04-22T00:22:08.346015 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:08.346350 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent tail
+D, [2015-04-22T00:22:08.346593 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:22:08.346804 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:22:08.347029 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'tail' on collective 'dtk-tenant101'
+D, [2015-04-22T00:22:08.347249 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent tail
+D, [2015-04-22T00:22:08.347505 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:22:08.347842 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:22:08.348279 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:22:08.391120 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:08.391429 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662128 last-known-good: 1429662072
+D, [2015-04-22T00:22:08.391814 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:08.392069 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:08.392388 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 5d3aa8be0fab5ec380e7a921413bef67
+D, [2015-04-22T00:22:08.397108 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:22:08.397420 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.tail.reply'
+D, [2015-04-22T00:22:08.398184 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:22:10.509043 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:22:10.509510 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:10.509916 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:22:10.510310 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:22:10.511655 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:22:10.512020 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:10.512360 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:10.512690 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:10.513021 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:22:10.513302 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:10.513627 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662130 last-known-good: 1429662072
+D, [2015-04-22T00:22:10.513930 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:10.514220 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent tail
+D, [2015-04-22T00:22:10.514534 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:22:10.514763 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:22:10.514989 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'tail' on collective 'dtk-tenant101'
+D, [2015-04-22T00:22:10.515205 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent tail
+D, [2015-04-22T00:22:10.515455 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:22:10.515758 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:22:10.516199 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:22:10.559237 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:10.559542 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662130 last-known-good: 1429662072
+D, [2015-04-22T00:22:10.559913 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:10.560181 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:10.560495 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request cb9ecb96b32d5b2ea07b035fc7f4bd8e
+D, [2015-04-22T00:22:10.565093 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:22:10.565392 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.tail.reply'
+D, [2015-04-22T00:22:10.566383 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:22:12.697600 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:22:12.698065 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:12.698485 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:22:12.698880 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:22:12.700220 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:22:12.700572 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:12.700932 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:12.701242 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:12.701577 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '=~', :value = '/^(i-6309ecb5)$/'
+D, [2015-04-22T00:22:12.701845 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:12.702151 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662132 last-known-good: 1429662072
+D, [2015-04-22T00:22:12.702483 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid =~ /^(i-6309ecb5)$/
+D, [2015-04-22T00:22:12.702794 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent tail
+D, [2015-04-22T00:22:12.703010 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:22:12.703239 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:22:12.703461 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'tail' on collective 'dtk-tenant101'
+D, [2015-04-22T00:22:12.703711 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent tail
+D, [2015-04-22T00:22:12.703962 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:22:12.704254 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:22:12.704719 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:22:12.749574 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:22:12.750007 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662132 last-known-good: 1429662072
+D, [2015-04-22T00:22:12.750438 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:12.750720 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:22:12.751061 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 1692e632ef6c5acba8f62d8cfac499a7
+D, [2015-04-22T00:22:12.755783 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:22:12.756088 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.tail.reply'
+D, [2015-04-22T00:22:12.757004 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:31:00.335053 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:31:00.335538 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:31:00.335912 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:31:00.336304 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:31:00.337607 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:31:00.338046 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:31:00.338410 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:31:00.338723 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid == i-6309ecb5
+D, [2015-04-22T00:31:00.339047 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '==', :value = 'i-6309ecb5'
+D, [2015-04-22T00:31:00.339331 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:31:00.339636 #21] DEBUG -- : base.rb:30:in `block in get_fact' Resetting facter cache, now: 1429662660 last-known-good: 1429662072
+D, [2015-04-22T00:31:00.340523 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid == i-6309ecb5
+D, [2015-04-22T00:31:00.340814 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent puppet_apply
+D, [2015-04-22T00:31:00.341030 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:31:00.341239 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:31:00.341473 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'puppet_apply' on collective 'dtk-tenant101'
+D, [2015-04-22T00:31:00.341685 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent puppet_apply
+D, [2015-04-22T00:31:00.341918 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:31:00.342229 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:31:00.342743 #21] DEBUG -- : cache.rb:101:in `read' Cache expired on 'ddl' key 'agent/puppet_apply'
+D, [2015-04-22T00:31:00.343141 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_apply ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.ddl
+I, [2015-04-22T00:31:00.343965 #21]  INFO -- : puppet_apply.rb:638:in `log_params' params: {:components_with_attributes=>[{"component_type"=>"class", "name"=>"stdlib", "id"=>2147917854, "module_name"=>"stdlib"}], :node_manifest=>[["$extlookup_datadir = '/etc/puppet/manifests/extdata'", "$extlookup_precedence = ['common']", "$dtk_assembly_node = \"docker-host\"", "stage{1:}", " ", "class {\"stdlib\": stage => 1}"]], :inter_node_stage=>"1", :version_context=>[{:id=>2147790775, :repo=>"dtk-user-puppetlabs-stdlib", :branch=>"workspace-private-dtk-user", :implementation=>"stdlib", :sha=>"693e06dff95382b59937bbaca5dee93aac90cb6f"}], :puppet_version=>nil, :service_id=>2147710331, :service_name=>"workspace", :task_id=>2147917860, :top_task_id=>2147917858, :agent_git_details=>{:repo=>"dtk-node-agent", :branch=>""}}
+D, [2015-04-22T00:31:00.344252 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:31:00.344481 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662660 last-known-good: 1429662660
+D, [2015-04-22T00:32:49.307285 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:32:49.307538 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:32:49.307735 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:32:49.307925 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:32:49.308700 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:32:49.308855 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:32:49.309021 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:32:49.309156 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid == i-6309ecb5
+D, [2015-04-22T00:32:49.309262 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '==', :value = 'i-6309ecb5'
+D, [2015-04-22T00:32:49.309373 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:32:49.309503 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662769 last-known-good: 1429662660
+D, [2015-04-22T00:32:49.309618 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid == i-6309ecb5
+D, [2015-04-22T00:32:49.309752 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent puppet_cancel
+D, [2015-04-22T00:32:49.309864 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:32:49.309961 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:32:49.310059 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'puppet_cancel' on collective 'dtk-tenant101'
+D, [2015-04-22T00:32:49.310154 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent puppet_cancel
+D, [2015-04-22T00:32:49.310342 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:32:49.310508 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel
+D, [2015-04-22T00:32:49.310778 #21] DEBUG -- : cache.rb:101:in `read' Cache expired on 'ddl' key 'agent/puppet_cancel'
+D, [2015-04-22T00:32:49.311002 #21] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_cancel ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.ddl
+I, [2015-04-22T00:32:49.311508 #21]  INFO -- : puppet_cancel.rb:29:in `run_action' Terminating puppet apply thread for task_id=2147917858
+I, [2015-04-22T00:32:49.311650 #21]  INFO -- : puppet_cancel.rb:43:in `run_action' Puppet apply thread for task_id=2147917858 is not running on this node.
+D, [2015-04-22T00:32:49.311818 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:32:49.311929 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:32:49.312055 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 4c7c575b8e8e520f90653c1430ebdb92
+D, [2015-04-22T00:32:49.316237 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:32:49.316379 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.puppet_cancel.reply'
+D, [2015-04-22T00:32:49.316903 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+I, [2015-04-22T00:33:10.271209 #21]  INFO -- : puppet_apply.rb:303:in `log_error' 
+----------------error-----
+#<Grit::Git::CommandFailed: Command failed [1]: /usr/bin/git --git-dir=/usr/share/dtk/puppet-modules/stdlib/.git remote add -t workspace-private-dtk-user -f origin git101@dtkhost2.internal.r8network.com:dtk-user-puppetlabs-stdlib
+
+Warning: Permanently added 'dtkhost2.internal.r8network.com,10.101.180.221' (ECDSA) to the list of known hosts.
+Connection closed by 10.101.180.221
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+error: Could not fetch origin
+>
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/grit-2.5.0/lib/grit/git.rb:356:in `native'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/grit-2.5.0/lib/grit/git.rb:372:in `method_missing'
+/usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb:36:in `git_command__remote_add'
+/usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb:11:in `clone_branch'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:145:in `clean_and_clone_module'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:88:in `block in pull_modules'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:60:in `each'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:60:in `pull_modules'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:45:in `run_action'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/rpc/agent.rb:86:in `handlemsg'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:126:in `block (2 levels) in dispatch'
+----------------error-----
+D, [2015-04-22T00:33:10.271488 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:10.271619 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:10.271788 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 8af837745c80571fb797bb8a7105ebbf
+D, [2015-04-22T00:33:10.276115 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:33:10.276255 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.puppet_apply.reply'
+D, [2015-04-22T00:33:10.276799 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+D, [2015-04-22T00:33:33.820081 #21] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:33:33.820322 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:33.820539 #21] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:33:33.820742 #21] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:33:33.821631 #21] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:33:33.821861 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:33.822043 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:33.822190 #21] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid == i-6309ecb5
+D, [2015-04-22T00:33:33.822331 #21] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '==', :value = 'i-6309ecb5'
+D, [2015-04-22T00:33:33.822457 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:33:33.822600 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662813 last-known-good: 1429662660
+D, [2015-04-22T00:33:33.822723 #21] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid == i-6309ecb5
+D, [2015-04-22T00:33:33.822868 #21] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent puppet_apply
+D, [2015-04-22T00:33:33.822983 #21] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:33:33.823087 #21] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:33:33.823191 #21] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'puppet_apply' on collective 'dtk-tenant101'
+D, [2015-04-22T00:33:33.823292 #21] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent puppet_apply
+D, [2015-04-22T00:33:33.823429 #21] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:33:33.823671 #21] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:33:33.823917 #21] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/puppet_apply'
+I, [2015-04-22T00:33:33.824243 #21]  INFO -- : puppet_apply.rb:638:in `log_params' params: {:components_with_attributes=>[{"component_type"=>"class", "name"=>"stdlib", "id"=>2147917854, "module_name"=>"stdlib"}], :node_manifest=>[["$extlookup_datadir = '/etc/puppet/manifests/extdata'", "$extlookup_precedence = ['common']", "$dtk_assembly_node = \"docker-host\"", "stage{1:}", " ", "class {\"stdlib\": stage => 1}"]], :inter_node_stage=>"1", :version_context=>[{:id=>2147790775, :repo=>"dtk-user-puppetlabs-stdlib", :branch=>"workspace-private-dtk-user", :implementation=>"stdlib", :sha=>"693e06dff95382b59937bbaca5dee93aac90cb6f"}], :puppet_version=>nil, :service_id=>2147710331, :service_name=>"workspace", :task_id=>2147917866, :top_task_id=>2147917864, :agent_git_details=>{:repo=>"dtk-node-agent", :branch=>""}}
+D, [2015-04-22T00:33:33.824400 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:33:33.824527 #21] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429662813 last-known-good: 1429662660
+I, [2015-04-22T00:33:33.918075 #21]  INFO -- : puppet_apply.rb:303:in `log_error' 
+----------------error-----
+#<Grit::Git::CommandFailed: Command failed [1]: /usr/bin/git --git-dir=/usr/share/dtk/puppet-modules/stdlib/.git remote add -t workspace-private-dtk-user -f origin git101@dtkhost2.internal.r8network.com:dtk-user-puppetlabs-stdlib
+
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+error: Could not fetch origin
+>
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/grit-2.5.0/lib/grit/git.rb:356:in `native'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/grit-2.5.0/lib/grit/git.rb:372:in `method_missing'
+/usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb:36:in `git_command__remote_add'
+/usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb:11:in `clone_branch'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:145:in `clean_and_clone_module'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:88:in `block in pull_modules'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:60:in `each'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:60:in `pull_modules'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:45:in `run_action'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/rpc/agent.rb:86:in `handlemsg'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:126:in `block (2 levels) in dispatch'
+----------------error-----
+D, [2015-04-22T00:33:33.918467 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:33.918609 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:33:33.918781 #21] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request c4a3cee238535fbbb3c19171e7b927b9
+D, [2015-04-22T00:33:33.923134 #21] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:33:33.923291 #21] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.puppet_apply.reply'
+D, [2015-04-22T00:33:33.923831 #21] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+W, [2015-04-22T00:34:18.304491 #21]  WARN -- : runner.rb:60:in `rescue in block in run' Exiting after signal: 
+D, [2015-04-22T00:34:18.304727 #21] DEBUG -- : stomp.rb:272:in `disconnect' Disconnecting from Stomp
+D, [2015-04-22T00:38:40.429613 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Facts::Pbuilder_facts from mcollective/facts/pbuilder_facts.rb
+D, [2015-04-22T00:38:40.502112 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin facts_plugin with class MCollective::Facts::Pbuilder_facts single_instance: true
+D, [2015-04-22T00:38:40.502350 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Connector::Stomp from mcollective/connector/stomp.rb
+D, [2015-04-22T00:38:40.506559 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin connector_plugin with class MCollective::Connector::Stomp single_instance: true
+D, [2015-04-22T00:38:40.506777 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Security::Sshkey from mcollective/security/sshkey.rb
+D, [2015-04-22T00:38:40.514706 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin security_plugin with class MCollective::Security::Sshkey single_instance: true
+D, [2015-04-22T00:38:40.666225 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Registration::Agentlist from mcollective/registration/agentlist.rb
+D, [2015-04-22T00:38:40.668525 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin registration_plugin with class MCollective::Registration::Agentlist single_instance: true
+D, [2015-04-22T00:38:40.669580 #20] DEBUG -- : pluginmanager.rb:47:in `<<' Registering plugin global_stats with class MCollective::RunnerStats single_instance: true
+I, [2015-04-22T00:38:40.669702 #20]  INFO -- : mcollectived:31:in `<top (required)>' The Marionette Collective 2.2.3 started logging at debug level
+D, [2015-04-22T00:38:40.669818 #20] DEBUG -- : mcollectived:46:in `<top (required)>' Starting in the foreground
+D, [2015-04-22T00:38:40.671500 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:38:40.671635 #20] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:40.671811 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:38:40.671930 #20] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin connector_plugin with class MCollective::Connector::Stomp
+I, [2015-04-22T00:38:40.672064 #20]  INFO -- : stomp.rb:124:in `initialize' MCollective 2.2.x will be the last to fully support the 'stomp' connector, please migrate to the 'activemq' or 'rabbitmq' connector
+D, [2015-04-22T00:38:40.672196 #20] DEBUG -- : stomp.rb:152:in `connect' Connecting to dtkhost2.internal.r8network.com:6163
+D, [2015-04-22T00:38:40.688740 #20] DEBUG -- : agents.rb:26:in `loadagents' Reloading all agents from disk
+D, [2015-04-22T00:38:40.689127 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found discovery at /usr/share/mcollective/plugins/mcollective/agent/discovery.rb
+D, [2015-04-22T00:38:40.689261 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Discovery from mcollective/agent/discovery.rb
+D, [2015-04-22T00:38:40.690683 #20] DEBUG -- : agents.rb:91:in `activate_agent?' MCollective::Agent::Discovery does not have an activate? method, activating as default
+D, [2015-04-22T00:38:40.690825 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin discovery_agent with class MCollective::Agent::Discovery single_instance: true
+D, [2015-04-22T00:38:40.690931 #20] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin discovery_agent with class MCollective::Agent::Discovery
+D, [2015-04-22T00:38:40.691086 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:40.691217 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.discovery.command
+D, [2015-04-22T00:38:40.691556 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found rpcutil at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:38:40.691685 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Rpcutil from mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:38:40.700102 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for rpcutil
+D, [2015-04-22T00:38:40.700256 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin rpcutil_agent with class MCollective::Agent::Rpcutil single_instance: false
+D, [2015-04-22T00:38:40.700366 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin rpcutil_agent with class MCollective::Agent::Rpcutil
+D, [2015-04-22T00:38:40.701416 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/rpcutil'
+D, [2015-04-22T00:38:40.704382 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found rpcutil ddl at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.ddl
+D, [2015-04-22T00:38:40.705332 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:40.705469 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.rpcutil.command
+D, [2015-04-22T00:38:40.705729 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:38:40.705857 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests from mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:38:40.707160 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests
+D, [2015-04-22T00:38:40.707322 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_agent with class MCollective::Agent::Execute_tests single_instance: false
+D, [2015-04-22T00:38:40.707429 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_agent with class MCollective::Agent::Execute_tests
+D, [2015-04-22T00:38:40.707595 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests'
+D, [2015-04-22T00:38:40.707830 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.ddl
+D, [2015-04-22T00:38:40.708111 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:40.708244 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests.command
+D, [2015-04-22T00:38:40.708514 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found tail at /usr/share/mcollective/plugins/mcollective/agent/tail.rb
+D, [2015-04-22T00:38:40.708644 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Tail from mcollective/agent/tail.rb
+D, [2015-04-22T00:38:40.709578 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for tail
+D, [2015-04-22T00:38:40.709718 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin tail_agent with class MCollective::Agent::Tail single_instance: false
+D, [2015-04-22T00:38:40.709821 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:38:40.709981 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:38:40.710212 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found tail ddl at /usr/share/mcollective/plugins/mcollective/agent/tail.ddl
+D, [2015-04-22T00:38:40.710555 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:40.713339 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.tail.command
+D, [2015-04-22T00:38:40.713620 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dtk_node_agent_git_client at /usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb
+D, [2015-04-22T00:38:40.713773 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dtk_node_agent_git_client from mcollective/agent/dtk_node_agent_git_client.rb
+W, [2015-04-22T00:38:40.882921 #20]  WARN -- : agents.rb:95:in `rescue in activate_agent?' Agent activation check for dtk_node_agent_git_client failed: NameError: uninitialized constant MCollective::Agent::Dtk_node_agent_git_client
+D, [2015-04-22T00:38:40.883108 #20] DEBUG -- : agents.rb:67:in `loadagent' Not activating agent dtk_node_agent_git_client due to agent policy in activate? method
+D, [2015-04-22T00:38:40.883297 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found sync_agent_code at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:38:40.883450 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Sync_agent_code from mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:38:41.750093 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for sync_agent_code
+D, [2015-04-22T00:38:41.750399 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code single_instance: false
+D, [2015-04-22T00:38:41.750517 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code
+D, [2015-04-22T00:38:41.750726 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/sync_agent_code'
+D, [2015-04-22T00:38:41.750985 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found sync_agent_code ddl at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.ddl
+D, [2015-04-22T00:38:41.751340 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.751499 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.sync_agent_code.command
+D, [2015-04-22T00:38:41.751942 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found get_log_fragment at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.rb
+D, [2015-04-22T00:38:41.752092 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Get_log_fragment from mcollective/agent/get_log_fragment.rb
+W, [2015-04-22T00:38:41.753490 #20]  WARN -- : agent.rb:234:in `metadata' get_log_fragment.rb:16:in `<class:Get_log_fragment>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:38:41.753658 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for get_log_fragment
+D, [2015-04-22T00:38:41.753797 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment single_instance: false
+D, [2015-04-22T00:38:41.753903 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment
+D, [2015-04-22T00:38:41.754073 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/get_log_fragment'
+D, [2015-04-22T00:38:41.754354 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found get_log_fragment ddl at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.ddl
+D, [2015-04-22T00:38:41.754722 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.754856 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.get_log_fragment.command
+D, [2015-04-22T00:38:41.755179 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ssh_agent at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:38:41.755375 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ssh_agent from mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:38:41.756831 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ssh_agent
+D, [2015-04-22T00:38:41.756982 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent single_instance: false
+D, [2015-04-22T00:38:41.757091 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent
+D, [2015-04-22T00:38:41.757259 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ssh_agent'
+D, [2015-04-22T00:38:41.757491 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found ssh_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.ddl
+D, [2015-04-22T00:38:41.757806 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.757940 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ssh_agent.command
+D, [2015-04-22T00:38:41.758259 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found git_access at /usr/share/mcollective/plugins/mcollective/agent/git_access.rb
+D, [2015-04-22T00:38:41.758521 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Git_access from mcollective/agent/git_access.rb
+D, [2015-04-22T00:38:41.759613 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for git_access
+D, [2015-04-22T00:38:41.759762 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin git_access_agent with class MCollective::Agent::Git_access single_instance: false
+D, [2015-04-22T00:38:41.759870 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin git_access_agent with class MCollective::Agent::Git_access
+D, [2015-04-22T00:38:41.760054 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/git_access'
+D, [2015-04-22T00:38:41.760288 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found git_access ddl at /usr/share/mcollective/plugins/mcollective/agent/git_access.ddl
+D, [2015-04-22T00:38:41.760570 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.760703 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.git_access.command
+D, [2015-04-22T00:38:41.761028 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found action_agent at /usr/share/mcollective/plugins/mcollective/agent/action_agent.rb
+D, [2015-04-22T00:38:41.761230 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Action_agent from mcollective/agent/action_agent.rb
+D, [2015-04-22T00:38:41.762449 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for action_agent
+D, [2015-04-22T00:38:41.762600 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin action_agent_agent with class MCollective::Agent::Action_agent single_instance: false
+D, [2015-04-22T00:38:41.762707 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin action_agent_agent with class MCollective::Agent::Action_agent
+D, [2015-04-22T00:38:41.762873 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/action_agent'
+D, [2015-04-22T00:38:41.763113 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found action_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/action_agent.ddl
+D, [2015-04-22T00:38:41.763395 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.763528 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.action_agent.command
+D, [2015-04-22T00:38:41.763872 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_apply at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:38:41.764079 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_apply from mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:38:41.770176 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_apply
+D, [2015-04-22T00:38:41.770379 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply single_instance: false
+D, [2015-04-22T00:38:41.770498 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:38:41.770672 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_apply'
+D, [2015-04-22T00:38:41.770912 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_apply ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.ddl
+D, [2015-04-22T00:38:41.771199 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.771337 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_apply.command
+D, [2015-04-22T00:38:41.771679 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests_v2 at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:38:41.771889 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests_v2 from mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:38:41.859840 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests_v2
+D, [2015-04-22T00:38:41.860050 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2 single_instance: false
+D, [2015-04-22T00:38:41.860192 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2
+D, [2015-04-22T00:38:41.860378 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests_v2'
+D, [2015-04-22T00:38:41.860640 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests_v2 ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.ddl
+D, [2015-04-22T00:38:41.860957 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.861100 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests_v2.command
+D, [2015-04-22T00:38:41.861479 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ps at /usr/share/mcollective/plugins/mcollective/agent/ps.rb
+D, [2015-04-22T00:38:41.861698 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ps from mcollective/agent/ps.rb
+W, [2015-04-22T00:38:41.862972 #20]  WARN -- : agent.rb:234:in `metadata' ps.rb:10:in `<class:Ps>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:38:41.863149 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ps
+D, [2015-04-22T00:38:41.863289 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ps_agent with class MCollective::Agent::Ps single_instance: false
+D, [2015-04-22T00:38:41.863395 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ps_agent with class MCollective::Agent::Ps
+D, [2015-04-22T00:38:41.863561 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ps'
+D, [2015-04-22T00:38:41.863837 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found ps ddl at /usr/share/mcollective/plugins/mcollective/agent/ps.ddl
+D, [2015-04-22T00:38:41.864149 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.864285 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ps.command
+D, [2015-04-22T00:38:41.864606 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found netstat at /usr/share/mcollective/plugins/mcollective/agent/netstat.rb
+D, [2015-04-22T00:38:41.864798 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Netstat from mcollective/agent/netstat.rb
+W, [2015-04-22T00:38:41.865969 #20]  WARN -- : agent.rb:234:in `metadata' netstat.rb:10:in `<class:Netstat>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:38:41.866136 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for netstat
+D, [2015-04-22T00:38:41.866274 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin netstat_agent with class MCollective::Agent::Netstat single_instance: false
+D, [2015-04-22T00:38:41.866434 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin netstat_agent with class MCollective::Agent::Netstat
+D, [2015-04-22T00:38:41.866602 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/netstat'
+D, [2015-04-22T00:38:41.866850 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found netstat ddl at /usr/share/mcollective/plugins/mcollective/agent/netstat.ddl
+D, [2015-04-22T00:38:41.867133 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.867266 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.netstat.command
+D, [2015-04-22T00:38:41.867609 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dev_manager at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:38:41.867740 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dev_manager from mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:38:41.869210 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for dev_manager
+D, [2015-04-22T00:38:41.869385 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin dev_manager_agent with class MCollective::Agent::Dev_manager single_instance: false
+D, [2015-04-22T00:38:41.869504 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin dev_manager_agent with class MCollective::Agent::Dev_manager
+D, [2015-04-22T00:38:41.869674 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/dev_manager'
+D, [2015-04-22T00:38:41.869908 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found dev_manager ddl at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.ddl
+D, [2015-04-22T00:38:41.870207 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.870398 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.dev_manager.command
+D, [2015-04-22T00:38:41.870733 #20] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_cancel at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:38:41.870863 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_cancel from mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:38:41.873781 #20] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_cancel
+D, [2015-04-22T00:38:41.873939 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel single_instance: false
+D, [2015-04-22T00:38:41.874052 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel
+D, [2015-04-22T00:38:41.874226 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_cancel'
+D, [2015-04-22T00:38:41.874516 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_cancel ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.ddl
+D, [2015-04-22T00:38:41.874840 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.875009 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_cancel.command
+D, [2015-04-22T00:38:41.877828 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Agent_data from mcollective/data/agent_data.rb
+D, [2015-04-22T00:38:41.881092 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin agent_data with class MCollective::Data::Agent_data single_instance: false
+D, [2015-04-22T00:38:41.881279 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Collective_data from mcollective/data/collective_data.rb
+D, [2015-04-22T00:38:41.882201 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin collective_data with class MCollective::Data::Collective_data single_instance: false
+D, [2015-04-22T00:38:41.882414 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fact_data from mcollective/data/fact_data.rb
+D, [2015-04-22T00:38:41.883509 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fact_data with class MCollective::Data::Fact_data single_instance: false
+D, [2015-04-22T00:38:41.883668 #20] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fstat_data from mcollective/data/fstat_data.rb
+D, [2015-04-22T00:38:41.884904 #20] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fstat_data with class MCollective::Data::Fstat_data single_instance: false
+D, [2015-04-22T00:38:41.885081 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin agent_data with class MCollective::Data::Agent_data
+D, [2015-04-22T00:38:41.885263 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/agent_data'
+D, [2015-04-22T00:38:41.903494 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found agent_data ddl at /usr/share/mcollective/plugins/mcollective/data/agent_data.ddl
+D, [2015-04-22T00:38:41.905292 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin collective_data with class MCollective::Data::Collective_data
+D, [2015-04-22T00:38:41.905489 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/collective_data'
+D, [2015-04-22T00:38:41.905724 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found collective_data ddl at /usr/share/mcollective/plugins/mcollective/data/collective_data.ddl
+D, [2015-04-22T00:38:41.906036 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fact_data with class MCollective::Data::Fact_data
+D, [2015-04-22T00:38:41.906196 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fact_data'
+D, [2015-04-22T00:38:41.906446 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found fact_data ddl at /usr/share/mcollective/plugins/mcollective/data/fact_data.ddl
+D, [2015-04-22T00:38:41.906781 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fstat_data with class MCollective::Data::Fstat_data
+D, [2015-04-22T00:38:41.906943 #20] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fstat_data'
+D, [2015-04-22T00:38:41.907147 #20] DEBUG -- : base.rb:93:in `block in findddlfile' Found fstat_data ddl at /usr/share/mcollective/plugins/mcollective/data/fstat_data.ddl
+D, [2015-04-22T00:38:41.907660 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:41.907792 #20] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.mcollective.command
+D, [2015-04-22T00:38:41.908128 #20] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:38:50.037874 #20] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:38:50.038093 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:50.038438 #20] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:38:50.038660 #20] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:38:50.039862 #20] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:38:50.040073 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:50.040243 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:50.040394 #20] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid == i-6309ecb5
+D, [2015-04-22T00:38:50.040505 #20] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '==', :value = 'i-6309ecb5'
+D, [2015-04-22T00:38:50.040622 #20] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:38:50.040822 #20] DEBUG -- : base.rb:30:in `block in get_fact' Resetting facter cache, now: 1429663130 last-known-good: 0
+D, [2015-04-22T00:38:50.041582 #20] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid == i-6309ecb5
+D, [2015-04-22T00:38:50.041731 #20] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent puppet_apply
+D, [2015-04-22T00:38:50.041842 #20] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:38:50.041945 #20] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:38:50.042046 #20] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'puppet_apply' on collective 'dtk-tenant101'
+D, [2015-04-22T00:38:50.042145 #20] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent puppet_apply
+D, [2015-04-22T00:38:50.042342 #20] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:38:50.042529 #20] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:38:50.042748 #20] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/puppet_apply'
+I, [2015-04-22T00:38:50.048672 #20]  INFO -- : puppet_apply.rb:638:in `log_params' params: {:components_with_attributes=>[{"component_type"=>"class", "name"=>"stdlib", "id"=>2147917854, "module_name"=>"stdlib"}], :node_manifest=>[["$extlookup_datadir = '/etc/puppet/manifests/extdata'", "$extlookup_precedence = ['common']", "$dtk_assembly_node = \"docker-host\"", "stage{1:}", " ", "class {\"stdlib\": stage => 1}"]], :inter_node_stage=>"1", :version_context=>[{:id=>2147790775, :repo=>"dtk-user-puppetlabs-stdlib", :branch=>"workspace-private-dtk-user", :implementation=>"stdlib", :sha=>"693e06dff95382b59937bbaca5dee93aac90cb6f"}], :puppet_version=>nil, :service_id=>2147710331, :service_name=>"workspace", :task_id=>2147917872, :top_task_id=>2147917870, :agent_git_details=>{:repo=>"dtk-node-agent", :branch=>""}}
+D, [2015-04-22T00:38:50.048872 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:38:50.049014 #20] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429663130 last-known-good: 1429663130
+I, [2015-04-22T00:38:50.855194 #20]  INFO -- : puppet_apply.rb:303:in `log_error' 
+----------------error-----
+#<Errno::ENOENT: No such file or directory - (/usr/share/dtk/tasks/workspace/task_id_2147917870/stage-1-puppet.log, /var/log/puppet/last.log)>
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:351:in `symlink'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:351:in `block in ln_s'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:1531:in `fu_each_src_dest0'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:349:in `ln_s'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:657:in `ln_s'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:176:in `run'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:47:in `run_action'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/rpc/agent.rb:86:in `handlemsg'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:126:in `block (2 levels) in dispatch'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/timeout.rb:69:in `timeout'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:125:in `block in dispatch'
+----------------error-----
+D, [2015-04-22T00:38:50.855492 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:50.855638 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:38:50.855865 #20] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request d0088a8a788351cba5ac127d434fda84
+D, [2015-04-22T00:38:50.860531 #20] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:38:50.860701 #20] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.puppet_apply.reply'
+D, [2015-04-22T00:38:50.861377 #20] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+W, [2015-04-22T00:39:19.038709 #20]  WARN -- : runner.rb:60:in `rescue in block in run' Exiting after signal: 
+D, [2015-04-22T00:39:19.038951 #20] DEBUG -- : stomp.rb:272:in `disconnect' Disconnecting from Stomp
+D, [2015-04-22T00:40:23.351603 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Facts::Pbuilder_facts from mcollective/facts/pbuilder_facts.rb
+D, [2015-04-22T00:40:23.424322 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin facts_plugin with class MCollective::Facts::Pbuilder_facts single_instance: true
+D, [2015-04-22T00:40:23.424555 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Connector::Stomp from mcollective/connector/stomp.rb
+D, [2015-04-22T00:40:23.428791 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin connector_plugin with class MCollective::Connector::Stomp single_instance: true
+D, [2015-04-22T00:40:23.428997 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Security::Sshkey from mcollective/security/sshkey.rb
+D, [2015-04-22T00:40:23.437521 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin security_plugin with class MCollective::Security::Sshkey single_instance: true
+D, [2015-04-22T00:40:23.584849 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading Mcollective::Registration::Agentlist from mcollective/registration/agentlist.rb
+D, [2015-04-22T00:40:23.587088 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin registration_plugin with class MCollective::Registration::Agentlist single_instance: true
+D, [2015-04-22T00:40:23.588136 #60] DEBUG -- : pluginmanager.rb:47:in `<<' Registering plugin global_stats with class MCollective::RunnerStats single_instance: true
+I, [2015-04-22T00:40:23.588260 #60]  INFO -- : mcollectived:31:in `<top (required)>' The Marionette Collective 2.2.3 started logging at debug level
+D, [2015-04-22T00:40:23.588356 #60] DEBUG -- : mcollectived:46:in `<top (required)>' Starting in the foreground
+D, [2015-04-22T00:40:23.589956 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:40:23.590084 #60] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:23.590233 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin global_stats with class MCollective::RunnerStats
+D, [2015-04-22T00:40:23.590402 #60] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin connector_plugin with class MCollective::Connector::Stomp
+I, [2015-04-22T00:40:23.590543 #60]  INFO -- : stomp.rb:124:in `initialize' MCollective 2.2.x will be the last to fully support the 'stomp' connector, please migrate to the 'activemq' or 'rabbitmq' connector
+D, [2015-04-22T00:40:23.590676 #60] DEBUG -- : stomp.rb:152:in `connect' Connecting to dtkhost2.internal.r8network.com:6163
+D, [2015-04-22T00:40:23.604503 #60] DEBUG -- : agents.rb:26:in `loadagents' Reloading all agents from disk
+D, [2015-04-22T00:40:23.604858 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found discovery at /usr/share/mcollective/plugins/mcollective/agent/discovery.rb
+D, [2015-04-22T00:40:23.604990 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Discovery from mcollective/agent/discovery.rb
+D, [2015-04-22T00:40:23.606397 #60] DEBUG -- : agents.rb:91:in `activate_agent?' MCollective::Agent::Discovery does not have an activate? method, activating as default
+D, [2015-04-22T00:40:23.606544 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin discovery_agent with class MCollective::Agent::Discovery single_instance: true
+D, [2015-04-22T00:40:23.606651 #60] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin discovery_agent with class MCollective::Agent::Discovery
+D, [2015-04-22T00:40:23.606810 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:23.606944 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.discovery.command
+D, [2015-04-22T00:40:23.607277 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found rpcutil at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:40:23.607407 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Rpcutil from mcollective/agent/rpcutil.rb
+D, [2015-04-22T00:40:23.615989 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for rpcutil
+D, [2015-04-22T00:40:23.616166 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin rpcutil_agent with class MCollective::Agent::Rpcutil single_instance: false
+D, [2015-04-22T00:40:23.616279 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin rpcutil_agent with class MCollective::Agent::Rpcutil
+D, [2015-04-22T00:40:23.617344 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/rpcutil'
+D, [2015-04-22T00:40:23.620317 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found rpcutil ddl at /usr/share/mcollective/plugins/mcollective/agent/rpcutil.ddl
+D, [2015-04-22T00:40:23.621276 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:23.621413 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.rpcutil.command
+D, [2015-04-22T00:40:23.621665 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:40:23.621794 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests from mcollective/agent/execute_tests.rb
+D, [2015-04-22T00:40:23.623119 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests
+D, [2015-04-22T00:40:23.623267 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_agent with class MCollective::Agent::Execute_tests single_instance: false
+D, [2015-04-22T00:40:23.623376 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_agent with class MCollective::Agent::Execute_tests
+D, [2015-04-22T00:40:23.623542 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests'
+D, [2015-04-22T00:40:23.623782 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests.ddl
+D, [2015-04-22T00:40:23.624066 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:23.624196 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests.command
+D, [2015-04-22T00:40:23.624444 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found tail at /usr/share/mcollective/plugins/mcollective/agent/tail.rb
+D, [2015-04-22T00:40:23.624568 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Tail from mcollective/agent/tail.rb
+D, [2015-04-22T00:40:23.625519 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for tail
+D, [2015-04-22T00:40:23.625658 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin tail_agent with class MCollective::Agent::Tail single_instance: false
+D, [2015-04-22T00:40:23.625761 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin tail_agent with class MCollective::Agent::Tail
+D, [2015-04-22T00:40:23.625923 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/tail'
+D, [2015-04-22T00:40:23.626140 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found tail ddl at /usr/share/mcollective/plugins/mcollective/agent/tail.ddl
+D, [2015-04-22T00:40:23.626477 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:23.629777 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.tail.command
+D, [2015-04-22T00:40:23.630036 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dtk_node_agent_git_client at /usr/share/mcollective/plugins/mcollective/agent/dtk_node_agent_git_client.rb
+D, [2015-04-22T00:40:23.630187 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dtk_node_agent_git_client from mcollective/agent/dtk_node_agent_git_client.rb
+W, [2015-04-22T00:40:23.796462 #60]  WARN -- : agents.rb:95:in `rescue in activate_agent?' Agent activation check for dtk_node_agent_git_client failed: NameError: uninitialized constant MCollective::Agent::Dtk_node_agent_git_client
+D, [2015-04-22T00:40:23.796674 #60] DEBUG -- : agents.rb:67:in `loadagent' Not activating agent dtk_node_agent_git_client due to agent policy in activate? method
+D, [2015-04-22T00:40:23.796849 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found sync_agent_code at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:40:23.796996 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Sync_agent_code from mcollective/agent/sync_agent_code.rb
+D, [2015-04-22T00:40:24.692317 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for sync_agent_code
+D, [2015-04-22T00:40:24.692582 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code single_instance: false
+D, [2015-04-22T00:40:24.692696 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin sync_agent_code_agent with class MCollective::Agent::Sync_agent_code
+D, [2015-04-22T00:40:24.692906 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/sync_agent_code'
+D, [2015-04-22T00:40:24.693145 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found sync_agent_code ddl at /usr/share/mcollective/plugins/mcollective/agent/sync_agent_code.ddl
+D, [2015-04-22T00:40:24.693494 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.693648 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.sync_agent_code.command
+D, [2015-04-22T00:40:24.694073 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found get_log_fragment at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.rb
+D, [2015-04-22T00:40:24.694226 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Get_log_fragment from mcollective/agent/get_log_fragment.rb
+W, [2015-04-22T00:40:24.695750 #60]  WARN -- : agent.rb:234:in `metadata' get_log_fragment.rb:16:in `<class:Get_log_fragment>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:40:24.695916 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for get_log_fragment
+D, [2015-04-22T00:40:24.696056 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment single_instance: false
+D, [2015-04-22T00:40:24.696165 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin get_log_fragment_agent with class MCollective::Agent::Get_log_fragment
+D, [2015-04-22T00:40:24.696338 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/get_log_fragment'
+D, [2015-04-22T00:40:24.696564 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found get_log_fragment ddl at /usr/share/mcollective/plugins/mcollective/agent/get_log_fragment.ddl
+D, [2015-04-22T00:40:24.696933 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.697068 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.get_log_fragment.command
+D, [2015-04-22T00:40:24.697378 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ssh_agent at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:40:24.697508 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ssh_agent from mcollective/agent/ssh_agent.rb
+D, [2015-04-22T00:40:24.699093 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ssh_agent
+D, [2015-04-22T00:40:24.699246 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent single_instance: false
+D, [2015-04-22T00:40:24.699382 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ssh_agent_agent with class MCollective::Agent::Ssh_agent
+D, [2015-04-22T00:40:24.699553 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ssh_agent'
+D, [2015-04-22T00:40:24.699775 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found ssh_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/ssh_agent.ddl
+D, [2015-04-22T00:40:24.700090 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.700231 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ssh_agent.command
+D, [2015-04-22T00:40:24.700536 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found git_access at /usr/share/mcollective/plugins/mcollective/agent/git_access.rb
+D, [2015-04-22T00:40:24.700666 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Git_access from mcollective/agent/git_access.rb
+D, [2015-04-22T00:40:24.701884 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for git_access
+D, [2015-04-22T00:40:24.702031 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin git_access_agent with class MCollective::Agent::Git_access single_instance: false
+D, [2015-04-22T00:40:24.702137 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin git_access_agent with class MCollective::Agent::Git_access
+D, [2015-04-22T00:40:24.702353 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/git_access'
+D, [2015-04-22T00:40:24.702577 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found git_access ddl at /usr/share/mcollective/plugins/mcollective/agent/git_access.ddl
+D, [2015-04-22T00:40:24.702860 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.702995 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.git_access.command
+D, [2015-04-22T00:40:24.703296 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found action_agent at /usr/share/mcollective/plugins/mcollective/agent/action_agent.rb
+D, [2015-04-22T00:40:24.703431 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Action_agent from mcollective/agent/action_agent.rb
+D, [2015-04-22T00:40:24.704736 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for action_agent
+D, [2015-04-22T00:40:24.704888 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin action_agent_agent with class MCollective::Agent::Action_agent single_instance: false
+D, [2015-04-22T00:40:24.704997 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin action_agent_agent with class MCollective::Agent::Action_agent
+D, [2015-04-22T00:40:24.705164 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/action_agent'
+D, [2015-04-22T00:40:24.705385 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found action_agent ddl at /usr/share/mcollective/plugins/mcollective/agent/action_agent.ddl
+D, [2015-04-22T00:40:24.705669 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.705809 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.action_agent.command
+D, [2015-04-22T00:40:24.706112 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_apply at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:40:24.706244 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_apply from mcollective/agent/puppet_apply.rb
+D, [2015-04-22T00:40:24.712714 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_apply
+D, [2015-04-22T00:40:24.712876 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply single_instance: false
+D, [2015-04-22T00:40:24.713002 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:40:24.713178 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_apply'
+D, [2015-04-22T00:40:24.713402 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_apply ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_apply.ddl
+D, [2015-04-22T00:40:24.713696 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.713839 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_apply.command
+D, [2015-04-22T00:40:24.714155 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found execute_tests_v2 at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:40:24.714409 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Execute_tests_v2 from mcollective/agent/execute_tests_v2.rb
+D, [2015-04-22T00:40:24.807647 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for execute_tests_v2
+D, [2015-04-22T00:40:24.807862 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2 single_instance: false
+D, [2015-04-22T00:40:24.807975 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin execute_tests_v2_agent with class MCollective::Agent::Execute_tests_v2
+D, [2015-04-22T00:40:24.808164 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/execute_tests_v2'
+D, [2015-04-22T00:40:24.808412 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found execute_tests_v2 ddl at /usr/share/mcollective/plugins/mcollective/agent/execute_tests_v2.ddl
+D, [2015-04-22T00:40:24.808727 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.808874 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.execute_tests_v2.command
+D, [2015-04-22T00:40:24.809232 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found ps at /usr/share/mcollective/plugins/mcollective/agent/ps.rb
+D, [2015-04-22T00:40:24.809370 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Ps from mcollective/agent/ps.rb
+W, [2015-04-22T00:40:24.810824 #60]  WARN -- : agent.rb:234:in `metadata' ps.rb:10:in `<class:Ps>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:40:24.811016 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for ps
+D, [2015-04-22T00:40:24.811162 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin ps_agent with class MCollective::Agent::Ps single_instance: false
+D, [2015-04-22T00:40:24.811272 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin ps_agent with class MCollective::Agent::Ps
+D, [2015-04-22T00:40:24.811447 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/ps'
+D, [2015-04-22T00:40:24.811675 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found ps ddl at /usr/share/mcollective/plugins/mcollective/agent/ps.ddl
+D, [2015-04-22T00:40:24.811960 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.812099 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.ps.command
+D, [2015-04-22T00:40:24.812415 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found netstat at /usr/share/mcollective/plugins/mcollective/agent/netstat.rb
+D, [2015-04-22T00:40:24.812610 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Netstat from mcollective/agent/netstat.rb
+W, [2015-04-22T00:40:24.813724 #60]  WARN -- : agent.rb:234:in `metadata' netstat.rb:10:in `<class:Netstat>': setting meta data in agents have been deprecated, DDL files are now being used for this information.
+D, [2015-04-22T00:40:24.813920 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for netstat
+D, [2015-04-22T00:40:24.814059 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin netstat_agent with class MCollective::Agent::Netstat single_instance: false
+D, [2015-04-22T00:40:24.814166 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin netstat_agent with class MCollective::Agent::Netstat
+D, [2015-04-22T00:40:24.814383 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/netstat'
+D, [2015-04-22T00:40:24.814608 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found netstat ddl at /usr/share/mcollective/plugins/mcollective/agent/netstat.ddl
+D, [2015-04-22T00:40:24.814889 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.815025 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.netstat.command
+D, [2015-04-22T00:40:24.815327 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found dev_manager at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:40:24.815456 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Dev_manager from mcollective/agent/dev_manager.rb
+D, [2015-04-22T00:40:24.816905 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for dev_manager
+D, [2015-04-22T00:40:24.817056 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin dev_manager_agent with class MCollective::Agent::Dev_manager single_instance: false
+D, [2015-04-22T00:40:24.817166 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin dev_manager_agent with class MCollective::Agent::Dev_manager
+D, [2015-04-22T00:40:24.817339 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/dev_manager'
+D, [2015-04-22T00:40:24.817561 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found dev_manager ddl at /usr/share/mcollective/plugins/mcollective/agent/dev_manager.ddl
+D, [2015-04-22T00:40:24.817844 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.817978 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.dev_manager.command
+D, [2015-04-22T00:40:24.818324 #60] DEBUG -- : agents.rb:104:in `block in findagentfile' Found puppet_cancel at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:40:24.818462 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Agent::Puppet_cancel from mcollective/agent/puppet_cancel.rb
+D, [2015-04-22T00:40:24.821156 #60] DEBUG -- : agent.rb:138:in `activate?' Starting default activation checks for puppet_cancel
+D, [2015-04-22T00:40:24.821321 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel single_instance: false
+D, [2015-04-22T00:40:24.821435 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_cancel_agent with class MCollective::Agent::Puppet_cancel
+D, [2015-04-22T00:40:24.821609 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'agent/puppet_cancel'
+D, [2015-04-22T00:40:24.821834 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found puppet_cancel ddl at /usr/share/mcollective/plugins/mcollective/agent/puppet_cancel.ddl
+D, [2015-04-22T00:40:24.822152 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.822366 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.puppet_cancel.command
+D, [2015-04-22T00:40:24.825123 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Agent_data from mcollective/data/agent_data.rb
+D, [2015-04-22T00:40:24.828367 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin agent_data with class MCollective::Data::Agent_data single_instance: false
+D, [2015-04-22T00:40:24.828539 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Collective_data from mcollective/data/collective_data.rb
+D, [2015-04-22T00:40:24.829432 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin collective_data with class MCollective::Data::Collective_data single_instance: false
+D, [2015-04-22T00:40:24.829595 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fact_data from mcollective/data/fact_data.rb
+D, [2015-04-22T00:40:24.830699 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fact_data with class MCollective::Data::Fact_data single_instance: false
+D, [2015-04-22T00:40:24.830857 #60] DEBUG -- : pluginmanager.rb:167:in `loadclass' Loading MCollective::Data::Fstat_data from mcollective/data/fstat_data.rb
+D, [2015-04-22T00:40:24.832053 #60] DEBUG -- : pluginmanager.rb:44:in `<<' Registering plugin fstat_data with class MCollective::Data::Fstat_data single_instance: false
+D, [2015-04-22T00:40:24.832224 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin agent_data with class MCollective::Data::Agent_data
+D, [2015-04-22T00:40:24.832404 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/agent_data'
+D, [2015-04-22T00:40:24.851602 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found agent_data ddl at /usr/share/mcollective/plugins/mcollective/data/agent_data.ddl
+D, [2015-04-22T00:40:24.853368 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin collective_data with class MCollective::Data::Collective_data
+D, [2015-04-22T00:40:24.853564 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/collective_data'
+D, [2015-04-22T00:40:24.853772 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found collective_data ddl at /usr/share/mcollective/plugins/mcollective/data/collective_data.ddl
+D, [2015-04-22T00:40:24.854079 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fact_data with class MCollective::Data::Fact_data
+D, [2015-04-22T00:40:24.854235 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fact_data'
+D, [2015-04-22T00:40:24.854468 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found fact_data ddl at /usr/share/mcollective/plugins/mcollective/data/fact_data.ddl
+D, [2015-04-22T00:40:24.854794 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin fstat_data with class MCollective::Data::Fstat_data
+D, [2015-04-22T00:40:24.854953 #60] DEBUG -- : cache.rb:117:in `block in ttl' Cache miss on 'ddl' key 'data/fstat_data'
+D, [2015-04-22T00:40:24.855143 #60] DEBUG -- : base.rb:93:in `block in findddlfile' Found fstat_data ddl at /usr/share/mcollective/plugins/mcollective/data/fstat_data.ddl
+D, [2015-04-22T00:40:24.855653 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:24.855786 #60] DEBUG -- : stomp.rb:243:in `subscribe' Subscribing to /topic/dtk-tenant101.mcollective.command
+D, [2015-04-22T00:40:24.856130 #60] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:40:32.033867 #60] DEBUG -- : runnerstats.rb:49:in `received' Incrementing total stat
+D, [2015-04-22T00:40:32.034090 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:32.034433 #60] DEBUG -- : sshkey.rb:85:in `validrequest?' Validating request from client sshkey=ubuntu
+D, [2015-04-22T00:40:32.034670 #60] DEBUG -- : sshkey.rb:345:in `node_verifier' Found custom authorized_keys file: '/etc/mcollective/ssh/authorized_keys'
+D, [2015-04-22T00:40:32.035844 #60] DEBUG -- : runnerstats.rb:38:in `validated' Incrementing validated stat
+D, [2015-04-22T00:40:32.036054 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:32.036244 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:32.036393 #60] DEBUG -- : util.rb:71:in `has_fact?' Comparing pbuilderid == i-6309ecb5
+D, [2015-04-22T00:40:32.036506 #60] DEBUG -- : util.rb:72:in `has_fact?' where :fact = 'pbuilderid', :operator = '==', :value = 'i-6309ecb5'
+D, [2015-04-22T00:40:32.036625 #60] DEBUG -- : pluginmanager.rb:80:in `[]' Returning new plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:40:32.036819 #60] DEBUG -- : base.rb:30:in `block in get_fact' Resetting facter cache, now: 1429663232 last-known-good: 0
+D, [2015-04-22T00:40:32.037543 #60] DEBUG -- : base.rb:128:in `block (2 levels) in validate_filter?' Passing based on fact pbuilderid == i-6309ecb5
+D, [2015-04-22T00:40:32.037702 #60] DEBUG -- : base.rb:117:in `block (2 levels) in validate_filter?' Passing based on agent puppet_apply
+D, [2015-04-22T00:40:32.037810 #60] DEBUG -- : base.rb:153:in `validate_filter?' Message passed the filter checks
+D, [2015-04-22T00:40:32.037912 #60] DEBUG -- : runnerstats.rb:26:in `passed' Incrementing passed stat
+D, [2015-04-22T00:40:32.038011 #60] DEBUG -- : runner.rb:80:in `agentmsg' Handling message for agent 'puppet_apply' on collective 'dtk-tenant101'
+D, [2015-04-22T00:40:32.038109 #60] DEBUG -- : agents.rb:119:in `dispatch' Dispatching a message to agent puppet_apply
+D, [2015-04-22T00:40:32.038246 #60] DEBUG -- : stomp.rb:199:in `receive' Waiting for a message from Stomp
+D, [2015-04-22T00:40:32.038468 #60] DEBUG -- : pluginmanager.rb:88:in `[]' Returning new plugin puppet_apply_agent with class MCollective::Agent::Puppet_apply
+D, [2015-04-22T00:40:32.038684 #60] DEBUG -- : cache.rb:105:in `read' Cache hit on 'ddl' key 'agent/puppet_apply'
+I, [2015-04-22T00:40:32.044546 #60]  INFO -- : puppet_apply.rb:638:in `log_params' params: {:components_with_attributes=>[{"component_type"=>"class", "name"=>"stdlib", "id"=>2147917854, "module_name"=>"stdlib"}], :node_manifest=>[["$extlookup_datadir = '/etc/puppet/manifests/extdata'", "$extlookup_precedence = ['common']", "$dtk_assembly_node = \"docker-host\"", "stage{1:}", " ", "class {\"stdlib\": stage => 1}"]], :inter_node_stage=>"1", :version_context=>[{:id=>2147790775, :repo=>"dtk-user-puppetlabs-stdlib", :branch=>"workspace-private-dtk-user", :implementation=>"stdlib", :sha=>"693e06dff95382b59937bbaca5dee93aac90cb6f"}], :puppet_version=>nil, :service_id=>2147710331, :service_name=>"workspace", :task_id=>2147917878, :top_task_id=>2147917876, :agent_git_details=>{:repo=>"dtk-node-agent", :branch=>""}}
+D, [2015-04-22T00:40:32.044743 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin facts_plugin with class MCollective::Facts::Pbuilder_facts
+D, [2015-04-22T00:40:32.044883 #60] DEBUG -- : base.rb:46:in `block in get_fact' Using cached facts now: 1429663232 last-known-good: 1429663232
+I, [2015-04-22T00:40:32.059161 #60]  INFO -- : puppet_apply.rb:303:in `log_error' 
+----------------error-----
+#<Errno::ENOENT: No such file or directory - (/usr/share/dtk/tasks/workspace/task_id_2147917876/stage-1-puppet.log, /var/log/puppet/last.log)>
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:351:in `symlink'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:351:in `block in ln_s'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:1531:in `fu_each_src_dest0'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/fileutils.rb:349:in `ln_s'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:657:in `ln_s'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:176:in `run'
+/usr/share/mcollective/plugins/mcollective/agent/puppet_apply.rb:47:in `run_action'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/rpc/agent.rb:86:in `handlemsg'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:126:in `block (2 levels) in dispatch'
+/opt/puppet-omnibus/embedded/lib/ruby/1.9.1/timeout.rb:69:in `timeout'
+/opt/puppet-omnibus/embedded/lib/ruby/gems/1.9.1/gems/mcollective-2.2.3/lib/mcollective/agents.rb:125:in `block in dispatch'
+----------------error-----
+D, [2015-04-22T00:40:32.059403 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:32.059536 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin security_plugin with class MCollective::Security::Sshkey
+D, [2015-04-22T00:40:32.059736 #60] DEBUG -- : base.rb:168:in `create_reply' Encoded a message for request 3bf7a9b8e1335742a47ece1758cc22f9
+D, [2015-04-22T00:40:32.064251 #60] DEBUG -- : pluginmanager.rb:83:in `[]' Returning cached plugin connector_plugin with class MCollective::Connector::Stomp
+D, [2015-04-22T00:40:32.064408 #60] DEBUG -- : stomp.rb:232:in `publish' Sending a broadcast message to STOMP target '/topic/dtk-tenant101.puppet_apply.reply'
+D, [2015-04-22T00:40:32.064883 #60] DEBUG -- : runnerstats.rb:56:in `block in sent' Incrementing replies stat
+W, [2015-04-22T00:41:39.766130 #60]  WARN -- : runner.rb:60:in `rescue in block in run' Exiting after signal: 
+D, [2015-04-22T00:41:39.766400 #60] DEBUG -- : stomp.rb:272:in `disconnect' Disconnecting from Stomp
